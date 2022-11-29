@@ -56,7 +56,7 @@ const DatasetService = {
           await this.actions.waitForCreation({ dataset }, { parentCtx: ctx });
           this.logger.info(`Created ${secure ? 'secure' : 'unsecure'} dataset ${dataset}`);
         } else {
-          this.logger.info(await response.text());
+          this.logger.info(await response.text(), 'requested url:', urlJoin(this.settings.url, '$/datasets'));
           throw new Error(`Error when creating ${secure ? 'secure' : 'unsecure'} dataset ${dataset}`);
         }
       }

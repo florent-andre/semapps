@@ -4,11 +4,13 @@
   "description": "Backup of datasets and uploaded files for SemApps",
   "license": "Apache-2.0",
   "author": "Virtual Assembly",
+  "script": {
+    "@TODO": "restaure this dependency: \"ssh2-sftp-client\": \"^7.2.1\""
+  },
   "dependencies": {
     "cron": "^1.8.2",
     "fs-extra": "^10.0.0",
-    "rsync": "^0.6.1",
-    "ssh2-sftp-client": "^7.2.1"
+    "rsync": "^0.6.1"
   },
   "publishConfig": {
     "access": "public"

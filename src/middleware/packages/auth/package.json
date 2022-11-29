@@ -4,6 +4,9 @@
   "description": "Authentification module for SemApps",
   "license": "Apache-2.0",
   "author": "Virtual Assembly",
+  "script": {
+    "@TODO": "restaure this dependency: \"node-sass\": \"^7.0.1\","
+  },
   "dependencies": {
     "@semapps/mime-types": "0.4.0",
     "@semapps/triplestore": "0.4.0",
@@ -14,7 +17,6 @@
     "moleculer-db": "^0.8.16",
     "moleculer-mail": "^1.2.5",
     "moleculer-web": "^0.10.0-beta1",
-    "node-sass": "^7.0.1",
     "openid-client": "^4.7.4",
     "passport": "^0.4.1",
     "passport-cas2": "0.0.12",

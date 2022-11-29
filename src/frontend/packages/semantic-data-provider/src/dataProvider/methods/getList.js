@@ -18,6 +18,7 @@ const getListMethod = config => async (resourceId, params = {}) => {
     // If containers are set explicitly, use them
     containers = findContainersWithPaths(dataModel.list.containers, dataServers);
   } else {
+    console.log('in the else:', dataModel.types, params, dataServers)
     // Otherwise find the container URIs on the given servers (either in the filter or the data model)
     containers = findContainersWithTypes(
       dataModel.types,
